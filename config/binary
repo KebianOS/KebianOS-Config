@@ -31,7 +31,7 @@ LB_BOOTLOADERS=""
 LB_CHECKSUMS="sha256"
 
 # Set compression
-LB_COMPRESSION="none"
+LB_COMPRESSION="gzip"
 
 # Support dm-verity on rootfs
 LB_DM_VERITY=""
