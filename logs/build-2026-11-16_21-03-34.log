@@ -14329,3 +14329,185 @@ Get:7 http://security.debian.org trixie-security/non-free-firmware Sources [696 
 Get:8 http://security.debian.org trixie-security/main Sources [268 kB]
 Get:9 http://security.debian.org trixie-security/main amd64 Packages [306 kB]
 Get:10 http://deb.debian.org/debian trixie InRelease [140 kB]
+Get:11 http://security.debian.org trixie-security/main Translation-en [184 kB]
+Get:12 http://security.debian.org trixie-security/contrib amd64 Packages [3152 B]
+Get:13 http://security.debian.org trixie-security/contrib Translation-en [2564 B]
+Get:14 http://security.debian.org trixie-security/non-free-firmware amd64 Packages [544 B]
+Get:15 http://security.debian.org trixie-security/non-free-firmware Translation-en [352 B]
+Get:16 http://deb.debian.org/debian trixie-updates InRelease [47.3 kB]
+Get:17 http://deb.debian.org/debian trixie/main Sources [10.5 MB]
+Get:18 http://deb.debian.org/debian trixie/non-free Sources [75.9 kB]
+Get:19 http://deb.debian.org/debian trixie/non-free-firmware Sources [6552 B]
+Get:20 http://deb.debian.org/debian trixie/contrib Sources [52.4 kB]
+Get:21 http://deb.debian.org/debian trixie/main amd64 Packages [9678 kB]
+Get:22 http://deb.debian.org/debian trixie/main Translation-en [6486 kB]
+Get:23 http://deb.debian.org/debian trixie/contrib amd64 Packages [53.9 kB]
+Get:24 http://deb.debian.org/debian trixie/contrib Translation-en [49.6 kB]
+Get:25 http://deb.debian.org/debian trixie/non-free amd64 Packages [100 kB]
+Get:26 http://deb.debian.org/debian trixie/non-free Translation-en [67.1 kB]
+Get:27 http://deb.debian.org/debian trixie/non-free-firmware amd64 Packages [6884 B]
+Get:28 http://deb.debian.org/debian trixie/non-free-firmware Translation-en [4704 B]
+Get:29 http://deb.debian.org/debian trixie-updates/main Sources [1400 B]
+Get:30 http://deb.debian.org/debian trixie-updates/main amd64 Packages [1108 B]
+Get:31 http://deb.debian.org/debian trixie-updates/main Translation-en [1032 B]
+Fetched 28.1 MB in 26s (1072 kB/s)
+Reading package lists...
+[2026-11-16 21:31:37] lb chroot_apt remove
+P: Deconfiguring file /etc/apt/apt.conf
+[2026-11-16 21:31:37] lb chroot_hostname remove
+P: Deconfiguring file /etc/hostname
+P: Deconfiguring file /bin/hostname
+[2026-11-16 21:31:37] lb chroot_resolv remove
+P: Deconfiguring file /etc/resolv.conf
+[2026-11-16 21:31:37] lb chroot_hosts remove
+P: Deconfiguring file /etc/hosts
+[2026-11-16 21:31:37] lb chroot_sysv-rc remove
+P: Deconfiguring file /usr/sbin/policy-rc.d
+[2026-11-16 21:31:37] lb chroot_tmpfs remove
+[2026-11-16 21:31:37] lb chroot_dpkg remove
+P: Deconfiguring file /sbin/start-stop-daemon
+[2026-11-16 21:31:37] lb chroot_debianchroot remove
+P: Deconfiguring file /etc/debian_chroot
+W: Skipping removal of chroot_debianchroot, it is not applied
+[2026-11-16 21:31:38] lb chroot_sysfs remove
+P: Begin unmounting /sys...
+[2026-11-16 21:31:38] lb chroot_selinuxfs remove
+[2026-11-16 21:31:38] lb chroot_proc remove
+P: Begin unmounting /proc...
+[2026-11-16 21:31:38] lb chroot_devpts remove
+P: Begin unmounting /dev/pts...
+[2026-11-16 21:31:38] lb chroot_prep install all mode-archives-binary
+[2026-11-16 21:31:38] lb chroot_devpts install
+P: Begin mounting /dev/pts...
+[2026-11-16 21:31:38] lb chroot_proc install
+P: Begin mounting /proc...
+[2026-11-16 21:31:38] lb chroot_selinuxfs install
+[2026-11-16 21:31:38] lb chroot_sysfs install
+P: Begin mounting /sys...
+[2026-11-16 21:31:38] lb chroot_debianchroot install
+P: Configuring file /etc/debian_chroot
+[2026-11-16 21:31:38] lb chroot_dpkg install
+P: Configuring file /sbin/start-stop-daemon
+dpkg-divert: warning: diverting file '/usr/sbin/start-stop-daemon' from an Essential package with rename is dangerous, use --no-rename
+[2026-11-16 21:31:39] lb chroot_tmpfs install
+[2026-11-16 21:31:39] lb chroot_sysv-rc install
+P: Configuring file /usr/sbin/policy-rc.d
+[2026-11-16 21:31:39] lb chroot_hosts install
+P: Configuring file /etc/hosts
+[2026-11-16 21:31:39] lb chroot_resolv install
+P: Configuring file /etc/resolv.conf
+[2026-11-16 21:31:39] lb chroot_hostname install
+P: Configuring file /etc/hostname
+P: Configuring file /bin/hostname
+dpkg-divert: warning: diverting file '/usr/bin/hostname' from an Essential package with rename is dangerous, use --no-rename
+[2026-11-16 21:31:39] lb chroot_apt install
+P: Configuring file /etc/apt/apt.conf
+[2026-11-16 21:31:39] lb chroot_archives binary install
+P: Configuring file /etc/apt/sources.list
+Ign:1 file:/packages ./ InRelease
+Get:2 file:/packages ./ Release [1235 B]
+Get:2 file:/packages ./ Release [1235 B]
+Ign:3 file:/packages ./ Release.gpg
+Get:4 file:/packages ./ Packages [1999 B]
+Hit:5 http://security.debian.org trixie-security InRelease
+Hit:6 https://kebianos.github.io/kebianos-apt trixie InRelease
+Hit:7 https://download.virtualbox.org/virtualbox/debian trixie InRelease
+Hit:8 http://deb.debian.org/debian trixie InRelease
+Get:9 https://download.onlyoffice.com/repo/debian squeeze InRelease [10.7 kB]
+Hit:10 http://deb.debian.org/debian trixie-updates InRelease
+Get:11 https://download.onlyoffice.com/repo/debian squeeze/main amd64 Packages [62.3 kB]
+Hit:12 https://packages.mozilla.org/apt mozilla InRelease
+Fetched 73.0 kB in 1s (57.1 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+debian-archive-keyring is already the newest version (2025.1).
+0 upgraded, 0 newly installed, 0 to remove and 1 not upgraded.
+Ign:1 file:/packages ./ InRelease
+Get:2 file:/packages ./ Release [1235 B]
+Get:2 file:/packages ./ Release [1235 B]
+Ign:3 file:/packages ./ Release.gpg
+Hit:4 http://deb.debian.org/debian trixie InRelease
+Hit:5 http://deb.debian.org/debian trixie-updates InRelease
+Hit:6 https://download.onlyoffice.com/repo/debian squeeze InRelease
+Hit:7 https://kebianos.github.io/kebianos-apt trixie InRelease
+Hit:8 http://security.debian.org trixie-security InRelease
+Hit:9 https://download.virtualbox.org/virtualbox/debian trixie InRelease
+Hit:10 https://packages.mozilla.org/apt mozilla InRelease
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Calculating upgrade...
+The following packages will be upgraded:
+  calamares-settings-kebianos
+1 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Need to get 0 B/63.5 kB of archives.
+After this operation, 0 B of additional disk space will be used.
+Get:1 file:/packages ./ calamares-settings-kebianos 1.9 [63.5 kB]
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 184144 files and directories currently installed.)
+Preparing to unpack .../calamares-settings-kebianos_1.9_amd64.deb ...
+Unpacking calamares-settings-kebianos (1.9) over (1.8) ...
+Setting up calamares-settings-kebianos (1.9) ...
+Processing triggers for mailcap (3.74) ...
+Processing triggers for desktop-file-utils (0.28-1) ...
+Processing triggers for libglib2.0-0t64:amd64 (2.84.4-3~deb13u5) ...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Calculating upgrade...
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+[2026-11-16 21:31:54] lb binary_dm-verity 
+[2026-11-16 21:31:54] lb binary_manifest 
+P: Begin creating manifest...
+[2026-11-16 21:31:54] lb binary_package-lists 
+P: Begin installing local package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Suggested packages:
+  debtags
+The following NEW packages will be installed:
+  dctrl-tools
+0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
+Need to get 0 B/104 kB of archives.
+After this operation, 432 kB of additional disk space will be used.
+Selecting previously unselected package dctrl-tools.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 184144 files and directories currently installed.)
+Preparing to unpack .../dctrl-tools_2.24-3+b1_amd64.deb ...
+Unpacking dctrl-tools (2.24-3+b1) ...
+Setting up dctrl-tools (2.24-3+b1) ...
+Processing triggers for man-db (2.13.1-1) ...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Solving dependencies...
+Some packages could not be installed. This may mean that you have
+requested an impossible situation or if you are using the unstable
+distribution that some required packages have not yet been created
+or been moved out of Incoming.
+The following information may help to resolve the situation:
+
+The following packages have unmet dependencies:
+ grub-efi-amd64 : Conflicts: grub-pc but 2.12-9+deb13u2 is to be installed
+ grub-pc : Conflicts: grub-efi-amd64 but 2.12-9+deb13u2 is to be installed
+E: Unable to correct problems, you have held broken packages.
+E: The following information from --solver 3.0 may provide additional context:
+   Unable to satisfy dependencies. Reached two conflicting decisions:
+   1. grub-pc:amd64 is not selected for install because:
+      1. grub-efi-amd64:amd64=2.12-9+deb13u2 is selected for install
+      2. grub-pc:amd64 Conflicts grub-efi-amd64
+   2. grub-pc:amd64=2.12-9+deb13u2 is selected for install
+E: An unexpected failure occurred, exiting...
+P: Begin unmounting filesystems...
+P: Saving caches...
+Reading package lists...
+Building dependency tree...
+Reading state information...
